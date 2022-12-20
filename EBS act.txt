@@ -1,0 +1,252 @@
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+11 package(s) needed for security, out of 14 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-10-1-11-10 ~]$ sudo apt-get update
+sudo: apt-get: command not found
+[ec2-user@ip-10-1-11-10 ~]$ sudo apt update
+sudo: apt: command not found
+[ec2-user@ip-10-1-11-10 ~]$ sudo yum update
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+amzn2-core                                                                                                                                       | 3.7 kB  00:00:00     
+Resolving Dependencies
+--> Running transaction check
+---> Package cloud-init.noarch 0:19.3-45.amzn2 will be updated
+---> Package cloud-init.noarch 0:19.3-46.amzn2 will be an update
+---> Package ec2-net-utils.noarch 0:1.7.1-1.amzn2 will be updated
+---> Package ec2-net-utils.noarch 0:1.7.2-1.amzn2 will be an update
+---> Package glibc.x86_64 0:2.26-60.amzn2 will be updated
+---> Package glibc.x86_64 0:2.26-61.amzn2 will be an update
+---> Package glibc-all-langpacks.x86_64 0:2.26-60.amzn2 will be updated
+---> Package glibc-all-langpacks.x86_64 0:2.26-61.amzn2 will be an update
+---> Package glibc-common.x86_64 0:2.26-60.amzn2 will be updated
+---> Package glibc-common.x86_64 0:2.26-61.amzn2 will be an update
+---> Package glibc-locale-source.x86_64 0:2.26-60.amzn2 will be updated
+---> Package glibc-locale-source.x86_64 0:2.26-61.amzn2 will be an update
+---> Package glibc-minimal-langpack.x86_64 0:2.26-60.amzn2 will be updated
+---> Package glibc-minimal-langpack.x86_64 0:2.26-61.amzn2 will be an update
+---> Package libcrypt.x86_64 0:2.26-60.amzn2 will be updated
+---> Package libcrypt.x86_64 0:2.26-61.amzn2 will be an update
+---> Package tzdata.noarch 0:2022d-1.amzn2.0.1 will be updated
+---> Package tzdata.noarch 0:2022e-1.amzn2.0.1 will be an update
+---> Package vim-common.x86_64 2:8.2.5172-1.amzn2.0.1 will be updated
+---> Package vim-common.x86_64 2:9.0.475-1.amzn2.0.1 will be an update
+---> Package vim-data.noarch 2:8.2.5172-1.amzn2.0.1 will be updated
+---> Package vim-data.noarch 2:9.0.475-1.amzn2.0.1 will be an update
+---> Package vim-enhanced.x86_64 2:8.2.5172-1.amzn2.0.1 will be updated
+---> Package vim-enhanced.x86_64 2:9.0.475-1.amzn2.0.1 will be an update
+---> Package vim-filesystem.noarch 2:8.2.5172-1.amzn2.0.1 will be updated
+---> Package vim-filesystem.noarch 2:9.0.475-1.amzn2.0.1 will be an update
+---> Package vim-minimal.x86_64 2:8.2.5172-1.amzn2.0.1 will be updated
+---> Package vim-minimal.x86_64 2:9.0.475-1.amzn2.0.1 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+========================================================================================================================================================================
+ Package                                        Arch                           Version                                         Repository                          Size
+========================================================================================================================================================================
+Updating:
+ cloud-init                                     noarch                         19.3-46.amzn2                                   amzn2-core                         926 k
+ ec2-net-utils                                  noarch                         1.7.2-1.amzn2                                   amzn2-core                          21 k
+ glibc                                          x86_64                         2.26-61.amzn2                                   amzn2-core                         3.3 M
+ glibc-all-langpacks                            x86_64                         2.26-61.amzn2                                   amzn2-core                         7.0 M
+ glibc-common                                   x86_64                         2.26-61.amzn2                                   amzn2-core                         773 k
+ glibc-locale-source                            x86_64                         2.26-61.amzn2                                   amzn2-core                         3.2 M
+ glibc-minimal-langpack                         x86_64                         2.26-61.amzn2                                   amzn2-core                          33 k
+ libcrypt                                       x86_64                         2.26-61.amzn2                                   amzn2-core                          53 k
+ tzdata                                         noarch                         2022e-1.amzn2.0.1                               amzn2-core                         481 k
+ vim-common                                     x86_64                         2:9.0.475-1.amzn2.0.1                           amzn2-core                         7.8 M
+ vim-data                                       noarch                         2:9.0.475-1.amzn2.0.1                           amzn2-core                          77 k
+ vim-enhanced                                   x86_64                         2:9.0.475-1.amzn2.0.1                           amzn2-core                         1.7 M
+ vim-filesystem                                 noarch                         2:9.0.475-1.amzn2.0.1                           amzn2-core                          72 k
+ vim-minimal                                    x86_64                         2:9.0.475-1.amzn2.0.1                           amzn2-core                         723 k
+
+Transaction Summary
+========================================================================================================================================================================
+Upgrade  14 Packages
+
+Total download size: 26 M
+Is this ok [y/d/N]: y
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(1/14): ec2-net-utils-1.7.2-1.amzn2.noarch.rpm                                                                                                   |  21 kB  00:00:00     
+(2/14): cloud-init-19.3-46.amzn2.noarch.rpm                                                                                                      | 926 kB  00:00:00     
+(3/14): glibc-2.26-61.amzn2.x86_64.rpm                                                                                                           | 3.3 MB  00:00:00     
+(4/14): glibc-common-2.26-61.amzn2.x86_64.rpm                                                                                                    | 773 kB  00:00:00     
+(5/14): glibc-all-langpacks-2.26-61.amzn2.x86_64.rpm                                                                                             | 7.0 MB  00:00:00     
+(6/14): glibc-locale-source-2.26-61.amzn2.x86_64.rpm                                                                                             | 3.2 MB  00:00:00     
+(7/14): glibc-minimal-langpack-2.26-61.amzn2.x86_64.rpm                                                                                          |  33 kB  00:00:00     
+(8/14): libcrypt-2.26-61.amzn2.x86_64.rpm                                                                                                        |  53 kB  00:00:00     
+(9/14): tzdata-2022e-1.amzn2.0.1.noarch.rpm                                                                                                      | 481 kB  00:00:00     
+(10/14): vim-data-9.0.475-1.amzn2.0.1.noarch.rpm                                                                                                 |  77 kB  00:00:00     
+(11/14): vim-enhanced-9.0.475-1.amzn2.0.1.x86_64.rpm                                                                                             | 1.7 MB  00:00:00     
+(12/14): vim-filesystem-9.0.475-1.amzn2.0.1.noarch.rpm                                                                                           |  72 kB  00:00:00     
+(13/14): vim-common-9.0.475-1.amzn2.0.1.x86_64.rpm                                                                                               | 7.8 MB  00:00:00     
+(14/14): vim-minimal-9.0.475-1.amzn2.0.1.x86_64.rpm                                                                                              | 723 kB  00:00:00     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                    50 MB/s |  26 MB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : 2:vim-data-9.0.475-1.amzn2.0.1.noarch                                                                                                               1/28 
+  Updating   : 2:vim-filesystem-9.0.475-1.amzn2.0.1.noarch                                                                                                         2/28 
+  Updating   : tzdata-2022e-1.amzn2.0.1.noarch                                                                                                                     3/28 
+  Updating   : glibc-2.26-61.amzn2.x86_64                                                                                                                          4/28 
+  Updating   : glibc-common-2.26-61.amzn2.x86_64                                                                                                                   5/28 
+  Updating   : glibc-minimal-langpack-2.26-61.amzn2.x86_64                                                                                                         6/28 
+  Updating   : 2:vim-common-9.0.475-1.amzn2.0.1.x86_64                                                                                                             7/28 
+  Updating   : 2:vim-enhanced-9.0.475-1.amzn2.0.1.x86_64                                                                                                           8/28 
+  Updating   : glibc-all-langpacks-2.26-61.amzn2.x86_64                                                                                                            9/28 
+  Updating   : glibc-locale-source-2.26-61.amzn2.x86_64                                                                                                           10/28 
+  Updating   : 2:vim-minimal-9.0.475-1.amzn2.0.1.x86_64                                                                                                           11/28 
+  Updating   : libcrypt-2.26-61.amzn2.x86_64                                                                                                                      12/28 
+  Updating   : ec2-net-utils-1.7.2-1.amzn2.noarch                                                                                                                 13/28 
+  Updating   : cloud-init-19.3-46.amzn2.noarch                                                                                                                    14/28 
+  Cleanup    : glibc-locale-source-2.26-60.amzn2.x86_64                                                                                                           15/28 
+  Cleanup    : glibc-all-langpacks-2.26-60.amzn2.x86_64                                                                                                           16/28 
+  Cleanup    : 2:vim-minimal-8.2.5172-1.amzn2.0.1.x86_64                                                                                                          17/28 
+  Cleanup    : 2:vim-enhanced-8.2.5172-1.amzn2.0.1.x86_64                                                                                                         18/28 
+  Cleanup    : ec2-net-utils-1.7.1-1.amzn2.noarch                                                                                                                 19/28 
+  Cleanup    : cloud-init-19.3-45.amzn2.noarch                                                                                                                    20/28 
+  Cleanup    : 2:vim-common-8.2.5172-1.amzn2.0.1.x86_64                                                                                                           21/28 
+  Cleanup    : libcrypt-2.26-60.amzn2.x86_64                                                                                                                      22/28 
+  Cleanup    : 2:vim-data-8.2.5172-1.amzn2.0.1.noarch                                                                                                             23/28 
+  Cleanup    : 2:vim-filesystem-8.2.5172-1.amzn2.0.1.noarch                                                                                                       24/28 
+  Cleanup    : glibc-common-2.26-60.amzn2.x86_64                                                                                                                  25/28 
+  Cleanup    : glibc-minimal-langpack-2.26-60.amzn2.x86_64                                                                                                        26/28 
+  Cleanup    : glibc-2.26-60.amzn2.x86_64                                                                                                                         27/28 
+  Cleanup    : tzdata-2022d-1.amzn2.0.1.noarch                                                                                                                    28/28 
+  Verifying  : 2:vim-enhanced-9.0.475-1.amzn2.0.1.x86_64                                                                                                           1/28 
+  Verifying  : tzdata-2022e-1.amzn2.0.1.noarch                                                                                                                     2/28 
+  Verifying  : 2:vim-data-9.0.475-1.amzn2.0.1.noarch                                                                                                               3/28 
+  Verifying  : 2:vim-common-9.0.475-1.amzn2.0.1.x86_64                                                                                                             4/28 
+  Verifying  : glibc-all-langpacks-2.26-61.amzn2.x86_64                                                                                                            5/28 
+  Verifying  : cloud-init-19.3-46.amzn2.noarch                                                                                                                     6/28 
+  Verifying  : 2:vim-minimal-9.0.475-1.amzn2.0.1.x86_64                                                                                                            7/28 
+  Verifying  : 2:vim-filesystem-9.0.475-1.amzn2.0.1.noarch                                                                                                         8/28 
+  Verifying  : glibc-2.26-61.amzn2.x86_64                                                                                                                          9/28 
+  Verifying  : libcrypt-2.26-61.amzn2.x86_64                                                                                                                      10/28 
+  Verifying  : glibc-minimal-langpack-2.26-61.amzn2.x86_64                                                                                                        11/28 
+  Verifying  : glibc-common-2.26-61.amzn2.x86_64                                                                                                                  12/28 
+  Verifying  : ec2-net-utils-1.7.2-1.amzn2.noarch                                                                                                                 13/28 
+  Verifying  : glibc-locale-source-2.26-61.amzn2.x86_64                                                                                                           14/28 
+  Verifying  : ec2-net-utils-1.7.1-1.amzn2.noarch                                                                                                                 15/28 
+  Verifying  : 2:vim-filesystem-8.2.5172-1.amzn2.0.1.noarch                                                                                                       16/28 
+  Verifying  : glibc-locale-source-2.26-60.amzn2.x86_64                                                                                                           17/28 
+  Verifying  : glibc-2.26-60.amzn2.x86_64                                                                                                                         18/28 
+  Verifying  : 2:vim-minimal-8.2.5172-1.amzn2.0.1.x86_64                                                                                                          19/28 
+  Verifying  : tzdata-2022d-1.amzn2.0.1.noarch                                                                                                                    20/28 
+  Verifying  : glibc-common-2.26-60.amzn2.x86_64                                                                                                                  21/28 
+  Verifying  : glibc-all-langpacks-2.26-60.amzn2.x86_64                                                                                                           22/28 
+  Verifying  : 2:vim-data-8.2.5172-1.amzn2.0.1.noarch                                                                                                             23/28 
+  Verifying  : glibc-minimal-langpack-2.26-60.amzn2.x86_64                                                                                                        24/28 
+  Verifying  : 2:vim-enhanced-8.2.5172-1.amzn2.0.1.x86_64                                                                                                         25/28 
+  Verifying  : libcrypt-2.26-60.amzn2.x86_64                                                                                                                      26/28 
+  Verifying  : cloud-init-19.3-45.amzn2.noarch                                                                                                                    27/28 
+  Verifying  : 2:vim-common-8.2.5172-1.amzn2.0.1.x86_64                                                                                                           28/28 
+
+Updated:
+  cloud-init.noarch 0:19.3-46.amzn2                         ec2-net-utils.noarch 0:1.7.2-1.amzn2                 glibc.x86_64 0:2.26-61.amzn2                          
+  glibc-all-langpacks.x86_64 0:2.26-61.amzn2                glibc-common.x86_64 0:2.26-61.amzn2                  glibc-locale-source.x86_64 0:2.26-61.amzn2            
+  glibc-minimal-langpack.x86_64 0:2.26-61.amzn2             libcrypt.x86_64 0:2.26-61.amzn2                      tzdata.noarch 0:2022e-1.amzn2.0.1                     
+  vim-common.x86_64 2:9.0.475-1.amzn2.0.1                   vim-data.noarch 2:9.0.475-1.amzn2.0.1                vim-enhanced.x86_64 2:9.0.475-1.amzn2.0.1             
+  vim-filesystem.noarch 2:9.0.475-1.amzn2.0.1               vim-minimal.x86_64 2:9.0.475-1.amzn2.0.1            
+
+Complete!
+[ec2-user@ip-10-1-11-10 ~]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        484M     0  484M   0% /dev
+tmpfs           492M     0  492M   0% /dev/shm
+tmpfs           492M  412K  491M   1% /run
+tmpfs           492M     0  492M   0% /sys/fs/cgroup
+/dev/xvda1      8.0G  1.6G  6.5G  20% /
+tmpfs            99M     0   99M   0% /run/user/1000
+[ec2-user@ip-10-1-11-10 ~]$ sudo file-s /dev/sdf
+sudo: file-s: command not found
+[ec2-user@ip-10-1-11-10 ~]$ sudo file -s /dev/sdf
+/dev/sdf: symbolic link to `xvdf'
+[ec2-user@ip-10-1-11-10 ~]$ sudo file -s /dev/xvdf
+/dev/xvdf: data
+[ec2-user@ip-10-1-11-10 ~]$ sudo mkfs -t ext3 /dev/xvdf
+mke2fs 1.42.9 (28-Dec-2013)
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=0 blocks, Stripe width=0 blocks
+65536 inodes, 262144 blocks
+13107 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=268435456
+8 block groups
+32768 blocks per group, 32768 fragments per group
+8192 inodes per group
+Superblock backups stored on blocks: 
+        32768, 98304, 163840, 229376
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information: done
+
+[ec2-user@ip-10-1-11-10 ~]$ sudo file -s /dev/xvdf
+/dev/xvdf: Linux rev 1.0 ext3 filesystem data, UUID=b9743494-a80c-4e00-a447-08ab12d5b83d (large files)
+[ec2-user@ip-10-1-11-10 ~]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        484M     0  484M   0% /dev
+tmpfs           492M     0  492M   0% /dev/shm
+tmpfs           492M  468K  491M   1% /run
+tmpfs           492M     0  492M   0% /sys/fs/cgroup
+/dev/xvda1      8.0G  1.6G  6.5G  20% /
+tmpfs            99M     0   99M   0% /run/user/1000
+tmpfs            99M     0   99M   0% /run/user/0
+[ec2-user@ip-10-1-11-10 ~]$ sudo mkdir /mnt/data
+[ec2-user@ip-10-1-11-10 ~]$ sudo mount /dev/xvdf  /mnt/data
+[ec2-user@ip-10-1-11-10 ~]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        484M     0  484M   0% /dev
+tmpfs           492M     0  492M   0% /dev/shm
+tmpfs           492M  468K  491M   1% /run
+tmpfs           492M     0  492M   0% /sys/fs/cgroup
+/dev/xvda1      8.0G  1.6G  6.5G  20% /
+tmpfs            99M     0   99M   0% /run/user/1000
+tmpfs            99M     0   99M   0% /run/user/0
+/dev/xvdf       975M   60K  924M   1% /mnt/data
+[ec2-user@ip-10-1-11-10 ~]$ cd /mnt/data
+[ec2-user@ip-10-1-11-10 data]$ sudo touch myfile.txt helplp.txt test.txt
+[ec2-user@ip-10-1-11-10 data]$ sudo vi myfile.txt 
+[ec2-user@ip-10-1-11-10 data]$ sudo file -s /dev/xvdp
+/dev/xvdp: cannot open (No such file or directory)
+[ec2-user@ip-10-1-11-10 data]$ sudo file -s /dev/sdg
+/dev/sdg: symbolic link to `xvdg'
+[ec2-user@ip-10-1-11-10 data]$ sudo file -s /dev/xvdg
+/dev/xvdg: Linux rev 1.0 ext3 filesystem data, UUID=b9743494-a80c-4e00-a447-08ab12d5b83d (needs journal recovery) (large files)
+[ec2-user@ip-10-1-11-10 data]$ sudo mkdir /mnt/restoredata
+[ec2-user@ip-10-1-11-10 data]$ sudo mount /dev/xvdp /mnt/restoredata/
+mount: /mnt/restoredata: special device /dev/xvdp does not exist.
+[ec2-user@ip-10-1-11-10 data]$ sudo mount /dev/xvdg /mnt/restoredata/
+[ec2-user@ip-10-1-11-10 data]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        484M     0  484M   0% /dev
+tmpfs           492M     0  492M   0% /dev/shm
+tmpfs           492M  472K  491M   1% /run
+tmpfs           492M     0  492M   0% /sys/fs/cgroup
+/dev/xvda1      8.0G  1.6G  6.5G  20% /
+tmpfs            99M     0   99M   0% /run/user/1000
+tmpfs            99M     0   99M   0% /run/user/0
+/dev/xvdf       975M   64K  924M   1% /mnt/data
+/dev/xvdg       975M   64K  924M   1% /mnt/restoredata
+[ec2-user@ip-10-1-11-10 data]$ cd /mnt/restoredata/
+[ec2-user@ip-10-1-11-10 restoredata]$ ls
+helplp.txt  lost+found  myfile.txt  test.txt
+[ec2-user@ip-10-1-11-10 restoredata]$ sudo cat myfile.txt 
+hi welcome to msis
+
+[ec2-user@ip-10-1-11-10 restoredata]$ ^C
+[ec2-user@ip-10-1-11-10 restoredata]$ 
